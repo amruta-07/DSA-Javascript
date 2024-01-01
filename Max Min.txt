@@ -1,0 +1,25 @@
+
+class Solution{
+    findSum(A,N){
+        let min=Infinity;
+        let max=-Infinity;
+        
+        for(let i=0; i<N; i++){
+            // console.log(A[i], max)
+            if(A[i]>max){
+                max=A[i];
+                
+            }
+          if(A[i]<min){
+                min=A[i];
+            } 
+        }
+        // console.log(max)
+      let sum=min+max;
+        
+      return sum
+    }
+}
+
+
+
